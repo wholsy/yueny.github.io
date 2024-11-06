@@ -4,7 +4,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://grains.codealy.top",
+  hostname: "https://codealy.top",
 
   author: {
     name: "沐沐",
@@ -15,13 +15,13 @@ export default hopeTheme({
   // iconPrefix: "iconfont icon-",
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "https://s.codealy.com/favicon.ico",
 
-  // Git 仓库和编辑链接
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-  repoLabel: "GitHub",
+  // // Git 仓库和编辑链接
+  // repo: "vuepress-theme-hope/vuepress-theme-hope",
+  // repoLabel: "GitHub",
   docsDir: "docs/src/",
-  docsBranch: "master",
+  // docsBranch: "master",
   breadcrumb: false,
 
   // 全屏按钮
@@ -36,13 +36,17 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  // footer: "默认页脚",
+  footer: '<a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备16010432号-9</a>'
+      +'<img src="/assets/images/beian.png" height="15px" width="15px" />'
+      +'<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch">'
+      +'<span>浙ICP备16010432号</span>'
+      +'</a>',
   displayFooter: true,
 
   // 博客相关
   blog: {
     // 个人介绍页地址
-    // intro: "/intro.html",
     intro: "/about-the-author/",
     sidebarDisplay: "mobile",
     // 博主头像
@@ -50,17 +54,17 @@ export default hopeTheme({
     // 座右铭
     description:"没有什么使我停留——除了目的，纵然岸旁有玫瑰、有绿荫、有宁静的港湾，我是不系之舟。",
     medias: {
-      Baidu: "https://baidu.com",
-      BiliBili: "https://bilibili.com",
-      Discord: "https://discord.com",
-      Gitee: "https://gitee.com",
-      GitHub: "https://github.com",
-      QQ: "https://qq.com",
-      Weibo: "https://weibo.com",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
-      },
+      // Baidu: "https://baidu.com",
+      // BiliBili: "https://bilibili.com",
+      // Discord: "https://discord.com",
+      Gitee: "https://gitee.com/wholsy",
+      GitHub: "https://github.com/wholsy",
+      // QQ: "https://qq.com",
+      // Weibo: "https://weibo.com",
+      // VuePressThemeHope: {
+      //   icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+      //   link: "https://theme-hope.vuejs.press",
+      // },
     },
   },
 

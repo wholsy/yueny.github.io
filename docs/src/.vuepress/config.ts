@@ -3,10 +3,15 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
+  // url
   base: "/",
 
-  // HTML 目录
-  dest: "./dist",
+  // HTML 目录, 与 docs 平级的目录。
+  // io:
+  //   -- dist
+  //   -- docs
+  //     ---- src
+  dest: "../dist",
 
   lang: "zh-CN",
   // 标题
@@ -54,17 +59,17 @@ export default defineUserConfig({
         })();
       `
     ],
-    // import <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DCLPLXY2Q"></script>
-    [
-      "script",{},
-      `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      
-        gtag('config', 'G-3DCLPLXY2Q');
-      `
-    ],
+    // // import <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DCLPLXY2Q"></script>
+    // [
+    //   "script",{},
+    //   `
+    //     window.dataLayer = window.dataLayer || [];
+    //     function gtag(){dataLayer.push(arguments);}
+    //     gtag('js', new Date());
+    //
+    //     gtag('config', 'G-3DCLPLXY2Q');
+    //   `
+    // ],
     [
       "link",
       {

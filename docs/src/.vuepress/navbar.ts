@@ -1,52 +1,61 @@
 import { navbar } from "vuepress-theme-hope";
 
+// 图标 @see https://fontawesome.com/icons/bars?f=classic&s=solid
 export default navbar([
-  "/",
-  "/demo/",
+  // 默认展示 .README.md 文件
+  // "/",
+
+  // // 菜单title 见 《post/demo/README.md》中的 title 属性
+  // "/posts/demo/",
+
   {
-    text: "博文",
-    icon: "pen-to-square",
-    prefix: "/posts/",
-    children: [
-      {
-        text: "苹果",
-        icon: "pen-to-square",
-        prefix: "apple/",
-        children: [
-          { text: "苹果1", icon: "pen-to-square", link: "1" },
-          { text: "苹果2", icon: "pen-to-square", link: "2" },
-          "3",
-          "4",
-        ],
-      },
-      {
-        text: "香蕉",
-        icon: "pen-to-square",
-        prefix: "banana/",
-        children: [
-          {
-            text: "香蕉 1",
-            icon: "pen-to-square",
-            link: "1",
-          },
-          {
-            text: "香蕉 2",
-            icon: "pen-to-square",
-            link: "2",
-          },
-          "3",
-          "4",
-        ],
-      },
-      { text: "樱桃", icon: "pen-to-square", link: "cherry" },
-      { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
-      "tomato",
-      "strawberry",
-    ],
+    text: "博客",
+    icon: "fa-solid fa-bars",
+    link: "/blog.md"
   },
   {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
+    text: "进阶之路",
+    icon: "laptop-code",
+    link: "/home.md"
   },
+  {
+    text: "有意思的小工具",
+    icon: "circle-info",
+    link: "/tools/"
+  },
+
+  // {
+  //   text: "附件资源",
+  //   icon: "pen-to-square",
+  //   children: [
+  //     {
+  //       text: "电脑软件安装包",
+  //       icon: "software",
+  //       link: "software/readme.md"
+  //     },
+  //     {
+  //       text: "PDF下载",
+  //       icon: "pen-to-square",
+  //       prefix: "pdf/",
+  //       children: [
+  //         {
+  //           text: "学习书籍",
+  //           icon: "book",
+  //           link: "books/readme.md",
+  //         },
+  //         {
+  //           text: "数据库论文",
+  //           icon: "paper",
+  //           link: "paper/",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+
+  // {
+  //   text: "V2 文档",
+  //   icon: "book",
+  //   link: "https://theme-hope.vuejs.press/zh/",
+  // },
 ]);
