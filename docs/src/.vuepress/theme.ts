@@ -4,20 +4,30 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://grains.codealy.top",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "沐沐",
+    url: "/about-the-author/",
   },
 
+  // // 阿里妈妈图标的前缀
+  // iconPrefix: "iconfont icon-",
   iconAssets: "fontawesome-with-brands",
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
+  // Git 仓库和编辑链接
   repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repoLabel: "GitHub",
+  docsDir: "docs/src/",
+  docsBranch: "master",
+  breadcrumb: false,
 
-  docsDir: "src",
+  // 全屏按钮
+  fullscreen: true,
+  // 在深色模式，浅色模式和自动之间切换 (默认)
+  darkmode: "switch",
 
   // 导航栏
   navbar,
@@ -31,40 +41,22 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "一个前端开发者",
-    intro: "/intro.html",
+    // 个人介绍页地址
+    // intro: "/intro.html",
+    intro: "/about-the-author/",
+    sidebarDisplay: "mobile",
+    // 博主头像
+    avatar: "/assets/images/me-282-small.png",
+    // 座右铭
+    description:"没有什么使我停留——除了目的，纵然岸旁有玫瑰、有绿荫、有宁静的港湾，我是不系之舟。",
     medias: {
-      Baidu: "https://example.com",
-      BiliBili: "https://example.com",
-      Bitbucket: "https://example.com",
-      Dingding: "https://example.com",
-      Discord: "https://example.com",
-      Dribbble: "https://example.com",
-      Email: "mailto:info@example.com",
-      Evernote: "https://example.com",
-      Facebook: "https://example.com",
-      Flipboard: "https://example.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
-      Gitlab: "https://example.com",
-      Gmail: "mailto:info@example.com",
-      Instagram: "https://example.com",
-      Lark: "https://example.com",
-      Lines: "https://example.com",
-      Linkedin: "https://example.com",
-      Pinterest: "https://example.com",
-      Pocket: "https://example.com",
-      QQ: "https://example.com",
-      Qzone: "https://example.com",
-      Reddit: "https://example.com",
-      Rss: "https://example.com",
-      Steam: "https://example.com",
-      Twitter: "https://example.com",
-      Wechat: "https://example.com",
-      Weibo: "https://example.com",
-      Whatsapp: "https://example.com",
-      Youtube: "https://example.com",
-      Zhihu: "https://example.com",
+      Baidu: "https://baidu.com",
+      BiliBili: "https://bilibili.com",
+      Discord: "https://discord.com",
+      Gitee: "https://gitee.com",
+      GitHub: "https://github.com",
+      QQ: "https://qq.com",
+      Weibo: "https://weibo.com",
       VuePressThemeHope: {
         icon: "https://theme-hope-assets.vuejs.press/logo.svg",
         link: "https://theme-hope.vuejs.press",
@@ -79,10 +71,23 @@ export default hopeTheme({
     },
   },
 
+  // 提示文字
+  encryptLocales: {
+    placeholder: "微信搜‘沐沐’回复‘密码’获取口令",
+
+    /**
+     * Passwrod error hint
+     */
+    errorHint: "哈哈，别调戏人家啦，按规则来嘛",
+  },
+
   // 多语言配置
   metaLocales: {
     editLink: "在 GitHub 上编辑此页",
   },
+
+  // 文章信息，可以填入数组，数组的顺序是各条目显示的顺序
+  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "Word", "ReadingTime"],
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
@@ -108,23 +113,23 @@ export default hopeTheme({
       lazyload: true,
       size: true,
     },
-
     // markdownMath: {
     //   // 启用前安装 katex
     //   type: "katex",
     //   // 或者安装 mathjax-full
     //   type: "mathjax",
     // },
-
     // 此功能被开启用于演示，你应仅当使用时保留。
     markdownTab: true,
-
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
       align: true,
       attrs: true,
       component: true,
       demo: true,
+      // figure: true,
+      // imgLazyload: true,
+      // imgSize: true,
       include: true,
       mark: true,
       plantuml: true,
@@ -144,6 +149,7 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
+      // tabs: true,
       tasklist: true,
       vPre: true,
 
@@ -174,6 +180,53 @@ export default hopeTheme({
       // install sandpack-vue3 before enabling it
       // sandpack: true,
     },
+
+    // docsearch: {
+    //   appId: "",
+    //   apiKey: "",
+    //   indexName: "grains",
+    //   locales: {
+    //     "/": {
+    //       placeholder: "搜索文档",
+    //       translations: {
+    //         button: {
+    //           buttonText: "搜索文档",
+    //           buttonAriaLabel: "搜索文档",
+    //         },
+    //         modal: {
+    //           searchBox: {
+    //             resetButtonTitle: "清除查询条件",
+    //             resetButtonAriaLabel: "清除查询条件",
+    //             cancelButtonText: "取消",
+    //             cancelButtonAriaLabel: "取消",
+    //           },
+    //           startScreen: {
+    //             recentSearchesTitle: "搜索历史",
+    //             noRecentSearchesText: "没有搜索历史",
+    //             saveRecentSearchButtonTitle: "保存至搜索历史",
+    //             removeRecentSearchButtonTitle: "从搜索历史中移除",
+    //             favoriteSearchesTitle: "收藏",
+    //             removeFavoriteSearchButtonTitle: "从收藏中移除",
+    //           },
+    //           errorScreen: {
+    //             titleText: "无法获取结果",
+    //             helpText: "你可能需要检查你的网络连接",
+    //           },
+    //           footer: {
+    //             selectText: "选择",
+    //             navigateText: "切换",
+    //             closeText: "关闭",
+    //             searchByText: "搜索提供者",
+    //           },
+    //           noResultsScreen: {
+    //             noResultsText: "无法找到相关结果",
+    //             suggestedQueryText: "你可以尝试查询",
+    //           },
+    //         },
+    //       },
+    //     },
+    //   },
+    // },
 
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
     // pwa: {
