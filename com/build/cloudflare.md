@@ -1,4 +1,4 @@
-# cloudflare
+# cloudflare & github
 
 ## 构建和部署
 ### 框架预设
