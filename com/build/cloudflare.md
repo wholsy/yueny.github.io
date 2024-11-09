@@ -1,8 +1,8 @@
 # cloudflare
 
 ## 构建和部署
-### Env 变量
-NODE_VERSION: 20.5.1
+### 框架预设
+VUE
 
 ### 构建命令
 ```
@@ -21,6 +21,9 @@ node --version
 ```text
 /
 ```
+
+### Env 变量
+NODE_VERSION: 20.5.1
 
 ### 自定义域名
 ```text
